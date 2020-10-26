@@ -1,0 +1,28 @@
+.custom-link {
+  outline: none;
+  height: 50px;
+  width: auto;
+  border: none;
+  color: white;
+  background-color: #4c8bf5;
+  border: none;
+  font-family: "Open Sans Condensed";
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 15px;
+  padding: 0 35px 0 35px;
+  line-height: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+
+  &.kontakt {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #357ae8;
+  }
+}

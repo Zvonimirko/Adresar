@@ -1,0 +1,46 @@
+.adresar {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  .adresar__header {
+    display: flex;
+    justify-content: space-between;
+
+    .adresar__header__left {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .adresar__search {
+    display: flex;
+    gap: 20px;
+  }
+  .list__title {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    border-radius: 2px;
+
+    h3 {
+      flex-basis: 25%;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+
+  .adresar__list {
+    overflow-y: scroll;
+    height: 60vh;
+    .adresar__person {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .adresar__footer {
+    padding: 10px 0px;
+  }
+}

@@ -1,0 +1,52 @@
+.kontakt-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .kontakt {
+    width: 40%;
+
+    .kontakt__body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 100px;
+
+      .kontakt__body__spans {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-basis: 50%;
+        p {
+          text-transform: uppercase;
+        }
+      }
+
+      .kontakt__body__data {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+
+      p {
+        span {
+          text-transform: uppercase;
+        }
+        padding-left: 10px;
+      }
+    }
+
+    .kontakt__footer {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}

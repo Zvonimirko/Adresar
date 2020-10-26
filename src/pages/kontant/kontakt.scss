@@ -1,0 +1,35 @@
+.kontakt__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  select {
+    border: none;
+    background: none;
+    background-color: rgba(232, 240, 248, 0.7);
+    width: 100%;
+    margin: 25px 0;
+    display: block;
+    padding: 10px 10px 10px 5px;
+    outline: none;
+  }
+  .custom-link {
+    margin-top: 30px;
+  }
+
+  .kontakt__error1 {
+    text-align: center;
+  }
+  .kontakt__error2 {
+    text-align: center;
+  }
+}

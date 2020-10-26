@@ -1,0 +1,42 @@
+$primary-color: black;
+
+@mixin ShrinkLabel {
+  top: -20px;
+  font-size: 12px;
+  color: $primary-color;
+}
+
+.form-calendar {
+  border: none;
+  background: none;
+  background-color: rgb(232, 240, 248);
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 25px 0;
+  display: block;
+  padding: 10px 10px 10px 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus ~ label {
+    @include ShrinkLabel();
+  }
+}
+
+.form-input-label {
+  position: absolute;
+  color: $primary-color;
+  top: 10px;
+  left: 10px;
+  transition: 0.3s all ease;
+
+  &.shrink {
+    @include ShrinkLabel();
+  }
+}
+
+.group {
+  position: relative;
+}

@@ -1,0 +1,29 @@
+.person {
+  background-color: rgb(232, 240, 248);
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 10px 0;
+  border-radius: 2px;
+
+  p {
+    flex-basis: 33%;
+    text-align: center;
+
+    a {
+      text-decoration: none;
+      color: black;
+      margin-right: 10px;
+    }
+
+    span {
+      margin-right: 10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
