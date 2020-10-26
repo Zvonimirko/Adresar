@@ -8,6 +8,15 @@ import { db } from "../../firebase";
 import "./kontakt.scss";
 import Calendar from "../../components/calendar/Calendar";
 
+const initialInput = {
+  dateOfBirth: "",
+  name: "",
+  contact: "",
+  favourite: false,
+  surname: "",
+  typeContact: "mobile",
+};
+
 const Kontakt = ({ handleChange, input, history, location, contacts, setInput }) => {
   const [nameError, setNameError] = useState("");
   const [surnameError, setSurnameError] = useState("");
@@ -57,14 +66,7 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
           .update({
             ...input,
           });
-        setInput({
-          dateOfBirth: "",
-          name: "",
-          contact: "",
-          favourite: false,
-          surname: "",
-          typeContact: "mobile",
-        });
+        setInput(initialInput);
         setNameError("");
         setSurnameError("");
         setContactError("");
@@ -74,14 +76,7 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
         db.collection("adresar").add({
           ...input,
         });
-        setInput({
-          dateOfBirth: "",
-          name: "",
-          contact: "",
-          favourite: false,
-          surname: "",
-          typeContact: "mobile",
-        });
+        setInput(initialInput);
         setNameError("");
         setSurnameError("");
         setContactError("");
@@ -155,14 +150,7 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
           className="kontakt__link"
           centered
           onClick={() => {
-            setInput({
-              dateOfBirth: "",
-              name: "",
-              contact: "",
-              favourite: false,
-              surname: "",
-              typeContact: "mobile",
-            });
+            setInput(initialInput);
             history.push("/adresar");
           }}
         >
