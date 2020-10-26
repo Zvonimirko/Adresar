@@ -18,7 +18,7 @@ export class Login extends Component {
 
   validate = () => {
     const regexPassword = /(?=.*?[0-9])(?=.*?[#!$+-]).{6,}/g;
-    const regexEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+    const regexEmail = /^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/g;
     let emailError = "";
     let passwordError = "";
 

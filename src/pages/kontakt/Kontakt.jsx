@@ -154,7 +154,17 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
         <LinkButton
           className="kontakt__link"
           centered
-          onClick={() => history.push("/adresar")}
+          onClick={() => {
+            setInput({
+              dateOfBirth: "",
+              name: "",
+              contact: "",
+              favourite: false,
+              surname: "",
+              typeContact: "mobile",
+            });
+            history.push("/adresar");
+          }}
         >
           Adresar
         </LinkButton>
