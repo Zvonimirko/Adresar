@@ -67,7 +67,7 @@ export class Login extends Component {
               value={email}
               onChange={this.handleChange}
               maxLength="100"
-              label="email"
+              label="Email"
             />
             <Input
               name="password"
@@ -75,7 +75,7 @@ export class Login extends Component {
               value={password}
               onChange={this.handleChange}
               maxLength="100"
-              label="password"
+              label="Lozinka"
             />
             <div className="login__error">
               <p>{this.state.emailError}</p>

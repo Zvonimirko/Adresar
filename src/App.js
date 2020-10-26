@@ -5,7 +5,7 @@ import { db } from "./firebase";
 import "./App.scss";
 
 import Adresar from "./pages/adresar/Adresar";
-import Kontakt from "./pages/kontant/Kontakt";
+import Kontakt from "./pages/kontakt/Kontakt";
 import Login from "./pages/login/Login";
 import KontaktDetalji from "./pages/kontaktDetalji/KontaktDetalji.jsx";
 import NotFound from "./pages/notFound/NotFound";

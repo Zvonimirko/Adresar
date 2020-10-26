@@ -10,19 +10,19 @@
     align-items: center;
     width: 20%;
 
-    .login__form {
+    &__form {
       width: 100%;
       button {
         margin: 10px auto;
       }
     }
 
-    .login__error {
+    &__error {
       overflow: hidden;
       text-align: center;
     }
 
-    .login__error-none {
+    &__error-none {
       display: none;
     }
   }

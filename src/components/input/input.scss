@@ -16,6 +16,10 @@ $primary-color: black;
   display: block;
   padding: 10px 10px 10px 5px;
 
+  &.noMargin {
+    margin: 0px;
+  }
+
   &:focus {
     outline: none;
   }

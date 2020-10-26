@@ -3,21 +3,22 @@
   flex-direction: column;
   padding: 10px;
 
-  .adresar__header {
+  &__header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
 
-    .adresar__header__left {
+    &__left {
       display: flex;
       gap: 10px;
     }
   }
 
-  .adresar__search {
+  &__links {
     display: flex;
     gap: 20px;
   }
-  .list__title {
+  &__list__title {
     border-bottom: 1px solid black;
     display: flex;
     justify-content: space-around;
@@ -31,16 +32,16 @@
     }
   }
 
-  .adresar__list {
+  &__list {
     overflow-y: scroll;
-    height: 60vh;
-    .adresar__person {
+    height: 63vh;
+    &__person {
       text-decoration: none;
       color: black;
     }
   }
 
-  .adresar__footer {
+  &__footer {
     padding: 10px 0px;
   }
 }

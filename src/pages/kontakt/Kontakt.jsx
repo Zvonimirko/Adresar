@@ -107,7 +107,7 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
           <Input
             type="text"
             name="name"
-            label="ime"
+            label="Ime"
             value={input.name}
             handleChange={handleChange}
             maxLength="100"
@@ -115,7 +115,7 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
           <Input
             type="text"
             name="surname"
-            label="prezime"
+            label="Prezime"
             value={input.surname}
             handleChange={handleChange}
             maxLength="300"
@@ -151,7 +151,11 @@ const Kontakt = ({ handleChange, input, history, location, contacts, setInput })
             {location.state ? "prepravi kontakt" : "kreiraj kontakt"}
           </Button>
         </form>
-        <LinkButton className="kontakt__link" kontakt onClick={() => history.push("/adresar")}>
+        <LinkButton
+          className="kontakt__link"
+          centered
+          onClick={() => history.push("/adresar")}
+        >
           Adresar
         </LinkButton>
       </div>

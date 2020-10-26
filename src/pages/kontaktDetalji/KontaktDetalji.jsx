@@ -19,18 +19,19 @@ const KontaktDetalji = ({ contacts, match, history }) => {
   }
 
   return (
-    <div className="kontakt-container">
-      <div className="kontakt">
+    <div className="kontakt-detail-container">
+      <div className="kontakt-detail">
+        <h1 className="kontakt-detail__title">Kontakt</h1>
         {person ? (
-          <div className="kontakt__body">
-            <div className="kontakt__body__spans">
+          <div className="kontakt-detail__body">
+            <div className="kontakt-detail__body__spans">
               <p>Ime:</p>
               <p>Prezime:</p>
               <p>Datum Rođenja:</p>
               <p>Vrsta Kontakta:</p>
               <p>Kontakt:</p>
             </div>
-            <div className="kontakt__body__data">
+            <div className="kontakt-detail__body__data">
               <p>{name}</p>
               <p>{surname}</p>
               <p>{dateOfBirth}</p>
@@ -39,14 +40,14 @@ const KontaktDetalji = ({ contacts, match, history }) => {
             </div>
           </div>
         ) : null}
-        <div className="kontakt__footer">
-          <Button onClick={handleFBDelete}>delete</Button>
+        <div className="kontakt-detail__footer">
+          <Button onClick={handleFBDelete}>Izbriši</Button>
           <LinkButton>
             <Link
-              className="konakt__link"
+              className="konakt-detail__link"
               to={{ pathname: "/kontakt", state: { prevPath: match.params.id } }}
             >
-              Update Link
+              Prepravi kontakt
             </Link>
           </LinkButton>
         </div>

@@ -92,7 +92,7 @@ const Adresar = ({ contacts, history, match }) => {
           }}
         />
       </div>
-      <div className="adresar__search">
+      <div className="adresar__links">
         <LinkButton onClick={() => history.push("/kontakt")}>Kreiraj kontakt</LinkButton>
         <LinkButton
           onClick={() => {
@@ -104,7 +104,7 @@ const Adresar = ({ contacts, history, match }) => {
           {match.url === "/adresar" ? "Omiljeni" : "adresar"}
         </LinkButton>
       </div>
-      <div className="list__title">
+      <div className="adresar__list__title">
         <h3>ime</h3>
         <h3>prezime</h3>
         <h3>kontakt</h3>

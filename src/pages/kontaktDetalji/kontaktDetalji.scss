@@ -1,20 +1,26 @@
-.kontakt-container {
+.kontakt-detail-container {
   min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  .kontakt {
+  .kontakt-detail {
     width: 40%;
 
-    .kontakt__body {
+    &__title {
+      text-align: center;
+      margin-bottom: 110px;
+      text-transform: uppercase;
+    }
+
+    &__body {
       display: flex;
       justify-content: center;
       align-items: center;
       padding-bottom: 100px;
 
-      .kontakt__body__spans {
+      &__spans {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -24,7 +30,7 @@
         }
       }
 
-      .kontakt__body__data {
+      &__data {
         flex-basis: 50%;
         display: flex;
         flex-direction: column;
@@ -39,7 +45,7 @@
       }
     }
 
-    .kontakt__footer {
+    &__footer {
       display: flex;
       justify-content: space-between;
 

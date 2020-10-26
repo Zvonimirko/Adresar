@@ -2,9 +2,9 @@ import React from "react";
 
 import "./linkButton.scss";
 
-function LinkButton({ children, kontakt, ...otherProps }) {
+function LinkButton({ children, centered, ...otherProps }) {
   return (
-    <button {...otherProps} className={`${kontakt ? "kontakt" : ""} custom-link`}>
+    <button {...otherProps} className={`${centered ? "centered" : ""} custom-link`}>
       {children}
     </button>
   );

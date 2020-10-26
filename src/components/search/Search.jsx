@@ -12,6 +12,7 @@ const Search = ({ onSearch }) => {
   return (
     <div>
       <Input
+        noMargin
         type="text"
         placeholder="pretraži"
         value={search}
